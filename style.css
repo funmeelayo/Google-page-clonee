@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    /* a tags comes with a default colour and styling, the styling below overrides those defaults */
+    text-decoration: none;
+    color: black;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* The vh stands for view port height */
+    height: 100vh;
+    justify-content: space-between;
+}
+
+nav{
+    height: 60px;
+    /* to put them on the same line use below */
+    display: flex;
+    /* to make them centered in their div/box use below */
+    align-items: center;
+    /* to separate contents to the two ends use below */
+    justify-content: space-between; 
+    /* Padding is space inside and o stands for the top and bottom, while 10px is for left and right */
+    padding: 0 10px;
+    /* after making the page class above a displayflex to a column, the width of the nav is affected and centered to correct this we need to give the nav a width of 100% of the page. */
+    width: 100%;
+}
+
+.nav-left{
+    
+    display: flex;
+    justify-content: space-between;
+    /* if you dont give an element a width, the default width is determined by its content. so there wont be room to space the elements out. */
+    width: 20%;
+    align-items: center;
+}
+
+.nav-right{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.google-img{
+    width: 35%;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+/* to reference the input tag inside the searchbox class of the div */
+.search-box input{
+    border: none;
+}
+
+button{
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+}
+
+footer{
+    height: 100px;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links-left, .links-right{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* below we want to call the paragraph inside the footer */
+footer p{
+text-align:center ;
+}
